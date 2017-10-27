@@ -1,8 +1,207 @@
 <!DOCTYPE html>
 <html>
 
-<head></head>
+<head>
+    <title>RJalonenSchool</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
 
-<body></body>
+<body>
+
+    <div class="container">
+        <!-- header for chalkboard picture -->
+        <div class="header">
+
+        </div>
+
+        <!-- navigation bar -->
+        <div class="nav">
+            <nav>
+
+                <ul>
+                    <a href="./index.html">
+                        <li>
+                            Home
+                        </li>
+                    </a>
+                    <a href="./portfolio.html">
+                        <li>
+                            Portfolio
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            School
+                        </li>
+                    </a>
+                </ul>
+
+            </nav>
+        </div>
+
+        <!-- page content -->
+        <div class="main">
+
+            <!-- 
+                Programmeerimise alused C# 
+            -->
+            <div class="subject">
+                <h2>Programmeerimise alused C#</h2>
+
+                <!-- C# Homework toggle -->
+                <input id="cSharpHomeworkToggle" type="checkbox" unchecked>
+                <label id="cSharpHomeworkLabel" for="cSharpHomeworkToggle">Kodutööd</label>
+                <!-- C# homeworks -->
+                <div id="cSharpHomeworkExpand">
+                    <!-- 01 homework guess the number console app -->
+                    <div class="homework">
+                        <h4>01 - GuessTheNumber</h4>
+                        <div class="description">
+                            <h5>Description: </h5>
+                            <p>1. Loo programm mis kuvab kasutajale välja teksti stiilis : „Ma valin välja ühe suvalise numbri
+                                vahemikus [1 – 100]. Proovi see ära arvata“. Defineerite selle suvalise numbri esialgu ise.
+                                Küsite kasutaja käest sisendit ning kuvate vastuseks, et kas arvuti valitud number on suurem
+                                või siis väiksem.
+                                <br />2. Täiendate eelnevat programmi nii, et lisaks suuremale ja väiksemale kontrollide ka võrdelisust.
+                                Kui kasutaja sisestab sama numbri mis arvuti valis (veel käsitsi defineeritud) siis ütleb,
+                                et „Arvasid numbri ära“.
+                                <br />3. Täiendage eelnevat programmi nii, et arvuti valib numbri nüüd juba automaatselt.
+                                <br />4. Täiendage eelnevat programmi nii, et pärast kasutaja pakkumist arvuti kuvab kas pakutud
+                                number on suurem või väiksem. Seejärel annab kasutajale uue võimaluse pakkumiseks. See käib
+                                niikaua kuni lõpuks kasutaja arvab õige numbri ära. Selleks kasutada while tsükklit ning
+                                ühte muutujat (tingimuslausena while’s, kas number on ära arvatud või mitte)
+                                <br />5. Muutke eelnevat programmi nii, et kasutate while(true) tsükklit ning väljute tsüklist
+                                kasutades keyword’i ’break’</p>
+                        </div>
+                        <div class="solution">
+                            <h5>Solution:</h5>
+                            <a href="https://github.com/jalonenrichard/KTA-17E-Programmeerimine/tree/master/KTA-17E%20Programmeerimine/02Homework/Exercises/01GuessTheNumber"
+                                target="_blank">GitHub link</a>
+                        </div>
+                    </div>
+                    <!-- 01 homework end -->
+                </div>
+                <!-- C# homeworks end -->
+
+                <!-- C# Materials toggle -->
+                <input id="cSharpMaterialToggle" type="checkbox" unchecked>
+                <label id="cSharpMaterialLabel" for="cSharpMaterialToggle">Materjalid</label>
+                <!-- C# Materials start -->
+                <div id="cSharpMaterialExpand">
+                    <div class="materials">
+                        <a target="_blank" href="https://www.youtube.com/channel/UCJ3AxeCHGPZkMi3kRfCuiHw/playlists">AngelSix youtube</a>
+                        <br />
+                        <a target="_blank" href="https://www.pluralsight.com/">Pluralsight</a>
+                    </div>
+                </div>
+                <!-- C# Materials end -->
+
+            </div>
+            <!-- Programmeerimise alused C# end -->
+
+            <!-- 
+                Veebirakenduste loomise alused 
+            -->
+            <div class="subject">
+                <h2>Veebirakenduste loomise alused</h2>
+
+                <!-- Veebirakendused Materials Toggle -->
+                <input id="veebirakendusedMaterialToggle" type="checkbox" unchecked>
+                <label id="veebirakendusedMaterialLabel" for="veebirakendusedMaterialToggle">Materjalid</label>
+                <!-- Veebirakendused Materials start -->
+                <div id="veebirakendusedMaterialExpand">
+                    <div class="materials">
+                        <a target="_blank" href="https://www.codecademy.com/">Codecademy</a>
+                    </div>
+                </div>
+                <!-- Veebirakendused Materials end -->
+            </div>
+            <!-- Veebirakenduste loomise alused end-->
+
+            <!-- 
+                Elektroonika ja elektrotehnika alused 
+            -->
+            <div class="subject">
+                <h2>Elektrotehnika ja elektroonika alused</h2>
+
+                <!-- Elektroonika Homework Toggle -->
+                <input id="elektroHomeworkToggle" type="checkbox" unchecked>
+                <label id="elektroHomeworkLabel" for="elektroHomeworkToggle">Kodutööd</label>
+                <!-- Elektroonika Homework start -->
+                <div id="elektroHomeworkExpand">
+                    <!-- 01 homework AND ja OR cMOS -->
+                    <div class="homework">
+                        <h4>01 - AND ja OR cMOS sim</h4>
+                        <div class="description">
+                            <h5>Description: </h5>
+                            <p>
+                                <a href="http://falstad.com/circuit">Falstad</a> simulaatoris teha nMOS ja pMOS transistoritest koosnevad cMOS AND ja OR loogikaskeemid.
+                                <br />Teha kõigepealt NAND ja NOR ning transistorina lisada inverter enne väljundit</p>
+                        </div>
+                        <div class="solution">
+                            <h5>Solution: </h5>
+                            <a target="_blank" href="http://falstad.com/circuit/circuitjs.html?cct=$+1+0.000005+10.20027730826997+50+5+50%0Af+512+496+576+496+16+1.5+0.02%0Af+512+592+576+592+16+1.5+0.02%0Af+368+368+432+368+17+1.5+0.02%0Af+512+368+576+368+17+1.5+0.02%0Aw+368+368+320+368+0%0Aw+320+368+320+432+0%0Aw+320+432+320+592+0%0Aw+320+592+512+592+0%0Ag+576+608+576+672+0%0AR+576+256+576+208+0+0+40+5+0+0+0.5%0Aw+576+304+576+352+0%0Aw+576+304+432+304+0%0Aw+432+304+432+352+0%0Aw+576+384+576+432+0%0Aw+576+432+576+480+0%0Aw+432+384+432+432+0%0Aw+432+432+576+432+0%0Aw+576+512+576+576+0%0Aw+512+496+512+464+0%0Aw+512+464+512+368+0%0Aw+512+464+416+464+0%0AL+224+432+192+432+0+1+false+5+0%0AM+816+432+848+432+0+2.5%0AL+416+464+384+464+0+1+false+5+0%0Aw+320+432+224+432+0%0Ax+376+183+500+186+4+24+cMOS%5CsAND%0Ax+736+79+1018+82+5+24+Richard%5CsJalonen,%5CsKTA-17E%0Aw+1088+432+992+432+0%0AM+1584+480+1616+480+0+2.5%0AL+992+432+960+432+0+0+false+5+0%0Aw+1344+336+1344+400+0%0AR+1344+272+1344+224+0+0+40+5+0+0+0.5%0Ag+1344+608+1344+672+0%0Af+1280+320+1344+320+17+1.5+0.02%0Af+1280+416+1344+416+17+1.5+0.02%0Af+1136+544+1200+544+16+1.5+0.02%0Af+1280+544+1344+544+16+1.5+0.02%0Aw+1136+544+1088+544+0%0Aw+1088+432+1088+544+0%0Aw+1280+320+1088+320+0%0Aw+1088+320+1088+432+0%0Aw+1280+416+1280+448+0%0Aw+1280+448+1280+544+0%0Aw+1280+448+1184+448+0%0AL+1184+448+1152+448+0+0+false+5+0%0Aw+1344+432+1344+480+0%0Aw+1344+528+1344+480+0%0Aw+1200+528+1200+480+0%0Aw+1200+480+1344+480+0%0Aw+1440+480+1344+480+0%0Aw+1344+608+1344+560+0%0Aw+1344+608+1200+608+0%0Aw+1200+560+1200+608+0%0Ax+1164+188+1273+191+4+24+cMOS%5CsOR%0Af+1488+432+1520+432+17+1.5+0.02%0Af+1488+528+1520+528+16+1.5+0.02%0Aw+1488+432+1440+432+0%0Aw+1440+432+1440+480+0%0Aw+1488+528+1440+528+0%0Aw+1440+480+1440+528+0%0Aw+1520+448+1520+480+0%0Aw+1520+512+1520+480+0%0Aw+1344+272+1344+304+0%0Aw+1344+272+1520+272+0%0Aw+1520+272+1520+416+0%0Aw+1520+544+1520+608+0%0Aw+1520+608+1344+608+0%0Aw+1584+480+1520+480+0%0Aw+816+432+752+432+0%0Aw+752+464+752+432+0%0Aw+752+400+752+432+0%0Aw+672+432+672+480+0%0Aw+720+480+672+480+0%0Aw+672+384+672+432+0%0Aw+720+384+672+384+0%0Af+720+480+752+480+16+1.5+0.02%0Af+720+384+752+384+17+1.5+0.02%0Aw+672+432+576+432+0%0Aw+576+256+576+304+0%0Aw+576+256+752+256+0%0Aw+752+256+752+368+0%0Aw+752+496+752+608+0%0Aw+752+608+576+608+0%0A">
+                                Falstad simulaator link
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 01 AND ja OR cMOS end -->
+                </div>
+                <!-- Elektroonika Homework end -->
+
+                <!-- Elektroonika Materials toggle -->
+                <input id="elektroMaterialToggle" type="checkbox" unchecked>
+                <label id="elektroMaterialLabel" for="elektroMaterialToggle">Materjalid</label>
+                <!-- Elektroonika Materials start -->
+                <div id="elektroMaterialExpand">
+                    <div class="materials">
+                        <a target="_blank" href="Materials/falshort.html">Falstad shortcuts</a>
+                    </div>
+                </div>
+                <!-- Elektroonika Materials end -->
+            </div>
+            <!-- Elektroonika ja elektrotehnika alused end -->
+
+            <!-- 
+                IT-valdkonna alused
+             -->
+            <div class="subject">
+                <h2>IT-valdkonna alusteadmised</h2>
+
+                <!-- IT alused Materials toggle -->
+                <input id="itAlusMaterialToggle" type="checkbox" unchecked>
+                <label id="itAlusMaterialLabel" for="itAlusMaterialToggle">Materjalid</label>
+                <!-- IT alused Materials start -->
+                <div id="itAlusMaterialExpand">
+                    <div class="materials">
+                        <a target="_blank" href="Materials/ITalus/Arduino_laboritoo.pdf">Arduino_laboritoo</a>
+                        <br />
+                        <a target="_blank" href="Materials/ITalus/alused_02_computer-input-output_est.pdf">Input_Output</a>
+                        <br />
+                        <a target="_blank" href="Materials/ITalus/alused_03_data-storage-tapes.pdf">Data_Storage</a>
+                        <br />
+                        <a target="_blank" href="Materials/ITalus/alused_04_data-hdd.pdf">Data_HDD</a>
+                        <br />
+                        <a target="_blank" href="Materials/ITalus/alused_05_data-storage-optical_est.pdf">Data_Storage_Optical</a>
+                        <br />
+                        <a target="_blank" href="Materials/ITalus/alused_06_components_motherboard_est.pdf">Components_Motherboard</a>
+                        <br />
+                    </div>
+                </div>
+                <!-- IT alsued Materials end -->
+            </div>
+            <!-- IT-valdkonna alused end -->
+
+        </div>
+        <!-- end of page content -->
+
+        <div class="footer">
+
+            &#169; Richard Jalonen
+            <br/> richard.jalonen@tptlive.ee
+
+        </div>
+    </div>
+</body>
 
 </html>
