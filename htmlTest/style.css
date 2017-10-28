@@ -4,12 +4,12 @@ html, body {
 }
 
 html {
-    background: #cccccc;
-    background: -webkit-linear-gradient( to left top, #cccccc, rgb(128, 128, 128));
-    background: -moz-linear-gradient( to left top, #cccccc, rgb(128, 128, 128));
-    background: -ms-linear-gradient( to left top, #cccccc, rgb(128, 128, 128));
-    background: -o-linear-gradient( to left top, #cccccc, rgb(128, 128, 128));
-    background: linear-gradient( to left top, #cccccc, rgb(128, 128, 128));
+    background: #eeeeee;
+    background: -webkit-linear-gradient( to right bottom, #eeeeee, #bcbcbc);
+    background: -moz-linear-gradient( to right bottom, #eeeeee, #bcbcbc);
+    background: -ms-linear-gradient( to right bottom, #eeeeee, #bcbcbc);
+    background: -o-linear-gradient( to right bottom, #eeeeee, #bcbcbc);
+    background: linear-gradient( to right bottom, #eeeeee, #bcbcbc);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100%
@@ -110,28 +110,18 @@ a:link, a:visited {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,cccccc+100;Gren+3D */
     background: #eeeeee;
     /* Old browsers */
-    background: -moz-linear-gradient(45deg, #eeeeee 0%, #cccccc 100%);
+    background: -moz-linear-gradient(45deg, #eeeeee 0%, #eeeeee 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, #eeeeee 0%, #cccccc 100%);
+    background: -webkit-linear-gradient(45deg, #eeeeee 0%, #eeeeee 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, #eeeeee 0%, #cccccc 100%);
+    background: linear-gradient(45deg, #eeeeee 0%, #eeeeee 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
 }
 
 .main {
-    padding-bottom: 50px;
-}
-
-.footer {
-    background: black;
-    height: 50px;
-    color: #737373;
-    text-align: center;
-    font-style: italic;
-    position: absolute;
-    bottom: 0;
+    padding: 35px;
 }
 
 .subject {
@@ -175,7 +165,7 @@ a:link, a:visited {
 .homework p, #falshortcuts p, #falshortcuts ul {
     border-left: 1px solid rgba(80, 80, 80, .3);
     text-indent: 0;
-    font-size: .9em;
+    font-size: 1em;
     font-weight: 200;
 }
 
@@ -204,6 +194,44 @@ a:link, a:visited {
 
 .homework a:hover, .solution a:hover, .materials a:hover, #falshortcuts a:hover {
     border-bottom: 1px solid #ed490a;
+}
+
+.footer {
+    padding: 5px;
+    text-align: center;
+    font-size: .8em;
+    font-style: italic;
+}
+
+#falshortcuts {
+    color: black;
+    background: white;
+    font-size: 1.2em;
+}
+
+.imageContainer {
+    position: relative;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.imageContainer img {
+    max-width: 600px;
+    border: 1px solid black;
+}
+
+.imageDescription {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.imageDescription span {
+    color: white;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px;
 }
 
 
@@ -244,7 +272,7 @@ label::before {
     vertical-align: text-top;
     width: 20px;
     height: 20px;
-    margin-right: 3px;
+    margin-right bottom: 3px;
 }
 
 
