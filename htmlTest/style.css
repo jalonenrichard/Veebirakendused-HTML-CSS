@@ -1,15 +1,18 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
 }
 
 html {
-    background: url(Images/background.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: #cccccc;
+    background: -webkit-linear-gradient( to left top, #cccccc, rgb(128, 128, 128));
+    background: -moz-linear-gradient( to left top, #cccccc, rgb(128, 128, 128));
+    background: -ms-linear-gradient( to left top, #cccccc, rgb(128, 128, 128));
+    background: -o-linear-gradient( to left top, #cccccc, rgb(128, 128, 128));
+    background: linear-gradient( to left top, #cccccc, rgb(128, 128, 128));
+    background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100%
 }
 
 body {
