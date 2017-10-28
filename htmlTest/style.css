@@ -1,10 +1,21 @@
 html, body {
     margin: 0;
     padding: 0;
+    height: 100%;
+}
+
+html {
+    background: url(Images/background.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -26,23 +37,37 @@ p {
     padding: 10px;
 }
 
-.container {
-    margin: 0;
-    padding: 0;
-    min-height: 100%;
+#homeHeader {
+    background: url(Images/backgroundImage.jpg) no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    border-radius: 15px 15px 0 0;
     position: relative;
 }
 
-.header {
+#schoolHeader {
+    background: url(Images/codeImage.jpg) no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+
+#portfolioHeader {
     background: url(Images/chalkboard.jpg) no-repeat center center;
     background-size: cover;
     height: 300px;
+    border-radius: 15px 15px 0 0;
+    position: relative;
 }
 
 .nav {
     background: #000000;
     height: 50px;
     width: 100%;
+    position: absolute;
+    bottom: 0;
+    opacity: .8;
 }
 
 .nav ul {
@@ -73,6 +98,25 @@ a:link, a:visited {
     text-decoration: none;
 }
 
+.container {
+    min-height: 100%;
+    position: relative;
+    margin: 50px;
+    border: 1px solid rgba(80, 80, 80, .3);
+    border-radius: 15px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,cccccc+100;Gren+3D */
+    background: #eeeeee;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #eeeeee 0%, #cccccc 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #eeeeee 0%, #cccccc 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #eeeeee 0%, #cccccc 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
 .main {
     padding-bottom: 50px;
 }
@@ -80,7 +124,6 @@ a:link, a:visited {
 .footer {
     background: black;
     height: 50px;
-    width: 100%;
     color: #737373;
     text-align: center;
     font-style: italic;
