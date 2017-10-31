@@ -19,10 +19,17 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
+    color: #111;
 }
 
 h1 {
     text-transform: uppercase;
+    color: #111;
+    font-size: 2.5em;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 40px 0;
+    text-align: center;
 }
 
 h2 {
@@ -57,7 +64,7 @@ p {
 }
 
 #portfolioHeader {
-    background: url(Images/chalkboard.jpg) no-repeat center center;
+    background: url(Images/portfolioBackground.jpg) no-repeat center center;
     background-size: cover;
     height: 300px;
     border-radius: 15px 15px 0 0;
@@ -124,6 +131,17 @@ a:link, a:visited {
     padding: 35px;
 }
 
+.main a {
+    border-bottom: 1px solid rgba(80, 80, 80, .3);
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #ed490a;
+}
+
+.main a:hover {
+    border-bottom: 1px solid #ed490a;
+}
+
 .subject {
     border-bottom: 1px solid rgba(80, 80, 80, .3);
     margin: 0 10px;
@@ -138,12 +156,43 @@ a:link, a:visited {
     margin: 25px 15px;
 }
 
+.project {
+    border: 1px solid;
+    padding: 5px;
+    overflow: auto;
+    min-width: 500px;
+    margin-top: 10px;
+}
+
+.project h4 {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.project p {
+    text-indent: 0;
+    font-weight: 100;
+}
+
+.project img {
+    float: right;
+    max-height: 500px;
+}
+
+.projectDescription {
+    text-align: center;
+}
+
 .homework, .materials {
     border-left: 1px solid rgba(80, 80, 80, .3);
     margin-left: 35px;
     padding-left: 5px;
     padding-bottom: 15px;
     padding-top: 5px;
+}
+
+.homework {
+    margin-top: 15px;
 }
 
 .materials {
@@ -153,7 +202,7 @@ a:link, a:visited {
 .homework h4, h5 {
     color: #111;
     font-size: 1.1em;
-    font-weight: 200;
+    font-weight: 400;
     margin-top: 0px;
 }
 
@@ -183,17 +232,6 @@ a:link, a:visited {
 
 .solution h5 {
     padding-bottom: 10px;
-}
-
-.solution a, .materials a {
-    border-bottom: 1px solid rgba(80, 80, 80, .3);
-    text-decoration: none;
-    font-size: 1.2em;
-    color: #ed490a;
-}
-
-.homework a:hover, .solution a:hover, .materials a:hover, #falshortcuts a:hover {
-    border-bottom: 1px solid #ed490a;
 }
 
 .footer {
@@ -232,6 +270,7 @@ a:link, a:visited {
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.7);
     padding: 5px;
+    font-style: italic;
 }
 
 
