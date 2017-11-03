@@ -179,6 +179,10 @@ a:link, a:visited {
     max-height: 500px;
 }
 
+.project a {
+    padding-top: 25px;
+}
+
 .projectDescription {
     text-align: center;
 }
