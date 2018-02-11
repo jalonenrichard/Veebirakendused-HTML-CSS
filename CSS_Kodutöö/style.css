@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 75%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wrapper {
+  border: 1px lightgray solid;
+}
+/* Header style */
+.header {
+  padding: 20px;
+  text-align: left;
+}
+/* Navigation bar style */
+.navBar {
+  overflow: hidden;
+  background: lightgray;
+}
+.navBar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 10px;
+  text-decoration: none;
+}
+.navBar a:hover {
+  background-color: white;
+  color: black;
+}
+.navBar form {
+  float: right;
+  padding: 8px;
+}
+/* Main part of the page */
+.main {
+  background: #fdff89;
+}
+/* Left side of the main page */
+.leftPanel {
+  float: left;
+  width: 20%;
+  padding: 15px;
+}
+.leftBottom {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background: lightgray;
+  padding: 2px;
+  text-align: center;
+}
+.leftBottom h2 {
+  font-size: 1.2em;
+}
+/* Middle of the main page (content) */
+.mainPanel {
+  float: left;
+  width: 60%;
+  padding: 15px;
+  background: white;
+}
+.card img {
+  width: 99%;
+}
+.card {
+  text-align: center;
+  padding: 5px;
+  float: left;
+  width: 48%;
+  border: 1px lightgray solid;
+  margin: 1%;
+}
+.textCard {
+  float: left;
+  width: 48%;
+  margin: 1%;
+}
+/* Right side of the main page */
+.rightPanel {
+  float: left;
+  width: 20%;
+  padding: 15px;
+}
+.rightBackground {
+  background: lightgray;
+  padding: 10px;
+  padding-bottom: 40px;
+}
+.rightCard {
+  padding: 5px;
+  margin-top: 25px;
+}
+.main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Footer style */
+.footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 7px;
+  height: 30px;
+}
+
+/* Other general styles */
+.tekstBold {
+  font-weight: bold;
+}
+.tekstLarger {
+  font-size: 150%;
+}
